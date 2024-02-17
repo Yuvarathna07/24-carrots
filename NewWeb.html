@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+       
+        #video-container {
+            position: relative; /* Positioning context for absolutely positioned elements */
+            width: 100vw; /* 100% of the viewport width */
+            height: 100vh; /* 100% of the viewport height */
+            overflow: hidden;
+            margin-top: 45px; /* Hide any overflow */
+        }
+
+        /* Ensure the video fills the container */
+        video {
+            width: 100%; /* 100% of the parent container's width */
+            height: 100%; /* 100% of the parent container's height */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+        }
+
+        /* Text styling */
+        #video-container span {
+            position: absolute; /* Position absolutely relative to the #video-container */
+            top: 50%; /* Position the text vertically in the middle */
+            left: 50%; /* Position the text horizontally in the middle */
+            transform: translate(-50%, -50%); /* Center the text precisely */
+            color: white; /* Text color */
+            font-size: 24px; /* Font size */
+            font-weight: bold; /* Font weight */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+        }
+
+        /* Other styles remain unchanged */
+        .nav {
+            text-align: center; 
+            margin-top: -20px;
+        }
+
+        .leftnav {
+            display: inline-block;
+            padding: 20px;
+            text-align: left; 
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .middile {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 70px;
+            text-decoration: none;
+        }
+
+        .rightnav {
+            display: inline-block;
+            padding: 20px;
+            text-align: right; 
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 20px;
+            text-align: right; 
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 6px;
+            text-align: center;
+            background-color: red;
+            border-radius: 15px;
+            margin-left: 25px;
+        }
+
+        .leftnav a, .middile a, .rightnav a ,.button a {
+            color: black; /* Set text color to black */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .P {
+            margin-top: -70px;
+            margin-left: -40px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.6); /* Set text color to a lighter shade of black */
+        }
+         .container {
+            display: flex;
+            margin-top: 100px; /* Use flexbox layout */
+        }
+        #leftid {
+            width: 50%; /* Each div takes up 50% of the viewport width */
+            height: 500px;
+            background-color: white;
+            display: flex; /* Use flexbox layout for the left div */
+            flex-direction: column; /* Arrange the children elements vertically */
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
+        }
+        #rightid {
+            width: 50%; /* Each div takes up 50% of the viewport width */
+            height: 500px;
+            background-color: black;
+            border-radius: 50% 0px 0px 0px;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+        }
+        #rightid img {
+            max-width: 100%; /* Set maximum width to 100% of the container */
+            max-height: 100%; /* Set maximum height to 100% of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Apply border-radius to make the image circular */
+        }
+        .P1 {
+            font-size: 23px;
+            text-align: center;
+        }
+        .h1 {
+            font-size: 80px;
+            text-align: center;
+        }
+        .button1 {
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            background-color: red;
+            border-radius: 15px;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="leftnav"><a href="">ABOUTS</a></div>
+        <div class="leftnav"><a href="">SERVICES</a></div>
+        <div class="leftnav"><a href="">EVENTS</a></div>
+        <div class="middile"><a href="">24 CARROTS</a></div>
+        <div class="rightnav"><a href="">VENUES</a></div>
+        <div class="rightnav"><a href="">CAREERS</a></div>
+        <button class="button"><a href="">GET IN TOUCH</a></button>
+        <p class="P">CATERING & EVENTS</p>
+    </nav>
+    
+    <div id="video-container">
+        <!-- Video element -->
+        <video controls>
+            <source src="C:\Users\merav\OneDrive\Documents\New folder/24carrtos-home-banner.mp4" type="video/mp4">
+        </video>
+        <span class="span">Simply the Finest</span>
+    </div>
+    <div class="container">
+        <div id="leftid">
+            <p class="P1">WELCOME TO 24 CARROTS</p>
+            <h1 class="h1">Remarkable <br>Catering & <br>Events</h1>
+            <p class="P1">24 Carrots is the premier catering and events company of choice in Southern California. We create remarkable experiences by offering the finest quality foods and providing unsurpassed personalized service, driven by our passion for life’s special occasions.</p>
+            <button class="button1">GET IN TOUCH</button>
+        </div>
+        <div id="rightid">
+            <img src="E:\html\Yuva\1.1-Lorely-Meza-1.jpg">
+        </div>
+    </div>
+</body>
+</html>
